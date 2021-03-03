@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head> 
+    <meta charset="UFT8"> <!--Linguagem latina, com acentos-->
+    <title>Tudo sobre Google Glass</title>
+    <link rel= "stylesheet"  href="_css/estilo.css"/> <!--Tudo que for criado na pasta CSS será usado no HTML-->
+    <link rel="stylesheet" href="_css/media.css"/>
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script> <!--Pasta que se encontra os códiogos em JS-->
+<body>
+<div id= "interface"> <!--Dividir a interface da página-->
+
+    <header id="cabecalho">   <!--Cabeçalho-->
+    <hgroup> <!--Agrupar títulos-->  
+        <h1>Google Glass</h1>
+        <h2>A revolução do Google está chegando</h2>
+    </hgroup>
+
+<img id = 'icone'  src="_imagens/multimidia.png"> <!--Imagem do menu principal-->
+  
+<nav id = "menu">       <!--Menu de navegação-->
+<h1>Menu Principal</h1>
+<ul>        <!--lista não ordenada-->
+ <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li> <!--Link vai direcionar ao próprio site-->
+ <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li> 
+ <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+ <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+ <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+</ul>
+</nav>
+
+ </header>   <!--Fim cabeçalho-->
+
+ <section id ='corpo-full'> <!--seção principal delimitar-->
+    <article id="noticia-principal">    
+    <header id='cabecalho-artigo'>
+    <hgroup>    <!--hgroup - Grupo de títulos-->
+        <h3>Glass > Multimídia</h3>
+        <h1>Sons e Vídeos</h1>
+        <h2>por Gustavo Guanabara</h2>
+        <h3 class= 'direita'>Atualizado em 01/Maio/2013</h3>
+        </hgroup>
+    </header> 
+
+    <div id='tv-radio'>
+        <audio id="musica" controls='controls'>
+            <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/><!--Poster é a capa do vídeo-->
+            <!--<source src="_media/2009-lovers-carvings-bibio.m4a" type="audio/x-aac"/>
+            <source src="_media/2009-lovers-carvings-bibio.ogg" type="audio/ogg"/>-->
+            Desculpe, mas não foi possível carregar o áudio!<!--mensagem de erro!-->
+        </audio>
+        <video id="filme" controls='controls' poster="_imagens/video-mini03.jpg">
+            <source src="_media/Getting Started.mp4" type="video/mp4">
+            <!--<source src="_media/Getting Started.webm" type="video/webm"> 
+            <source src="_media/Getting Started.ogv" type="video/ogg">-->
+            Desculpe, mas não foi possível carregar o vídeo!   
+        </video>   
+    </div>  
+    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+</article>
+</section>
+
+<footer id='rodape'> <!--seção de rodapé-->
+    <p>Copyright &copy; 2013 - by Gustavo Guanabara<br>
+    <a href="http://facebook.com/cursosemvideo" target="blank">Facebook</a> | 
+    <a href="http://twitter.com/cursoemvideo" target="blank"> Twitter</p>
+    </footer>
+    </div>
+    </body>
+    
+    </html>

@@ -1,0 +1,259 @@
+@charset "UTF-8"; /* Configuração para linguagem latina*/
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');/*Importação de fonte online*/
+@font-face{       /*Configuração da Fonte que está na pasta*/  
+    font-family: 'FonteLogo';
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color:#dddddd;
+    color: rgba(0,0,0,1);    
+}
+
+div#interface{  /*configurar a div que abrange tudo, menos o menu*/
+    width: 1100px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto; /*margem*/
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px ; /*descolar'' o texto da margem*/
+} 
+
+/*Configuração para todos os paragrafos*/
+p {
+    text-align:justify;
+    text-indent: 50px;
+}
+
+a { /*cor dos paragrafos*/
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{ /*deixar sublinhadoem todos os links*/
+    text-decoration: underline;
+}
+
+/*oculos posição*/
+header#cabecalho img#icone{
+    position: absolute; /*para poder movimentar livremente na tela*/
+    left: 1017px;
+    top: 68px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url('../_imagens/glass-logo-peq.jpg') no-repeat 0px 80px; /*imagem do logo google glass como background(macete)*/
+}
+
+header#cabecalho h1 { /*formatar o primeiro título*/
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0, .6);
+    padding: 0px;
+    margin-bottom: 0px; /*margem de baixo anulada, para juntar os dois titulos*/
+}
+
+header#cabecalho h2 { /*formatar segundo titulo*/
+    font-family: 'Titillium Web', sans-serif; /*fonte do google/fonts*/
+    font-size: 15px;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px; /*margem de cima anulada*/
+}
+
+/*Formatação de imagens com legendas*/
+
+/*Tudo quer for (figure) da classe (foto legenda) terá a formatação entre as {}*/
+figure.foto-legenda {   
+    position: relative; /*Posição relativa porque ela vai ficar no lugar relativo ao código HTML */
+    border: 8px solid white; /*Borda da imagem*/
+    box-shadow: 1px 1px 4px black; /*Sombra*/
+}
+
+figure.foto-legenda img{ /*Tudo que for -img- terá largura e altura 100%*/
+    width: 100%;
+    height: 100%;
+}
+
+/*Deixando a legenda apenas dentro da borda da imagem*/
+figure.foto-legenda figcaption{
+    opacity: 0; /*Deixando a legenda "invisível"*/
+    position: absolute; /*Posição absoluta dentro do seu "pai" que é o (figure)*/
+    top: 0px;
+    background-color:rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px; 
+    box-sizing: border-box; /* Criar uma caixa dentro da borda, evitando que o fundo da legenda ultrapasse a borda*/
+    transition: opacity 1s; /*Aplicar efeito de transição de 1s na opacity da legenda*/
+}
+
+/* Legenda exibida quando mouse passa por cima da foto*/
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/*Formatação do menu*/
+
+nav#menu {
+    display : block; /*Ser exibido como um bloco*/
+}
+
+nav#menu ul{            
+    list-style: none;           /*Remover os marcadores da lista*/
+    text-transform: uppercase;  /*Letras maiusculas*/
+    position: absolute;         /*Colocar em qualquer lugar da tela*/
+    top: -20px;
+    left: 500px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;   /*transition: criar efeito de transição na box*/
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover{
+    background-color:#606060 ;   /*Efeito de sombra na box*/
+}
+
+nav#menu h1{                /*Ocultar da interface gráfica*/
+    display: none;
+}
+
+nav#menu a {                /*Formatação de todos os links*/
+    color: black;
+    text-decoration: none; /*Tirar sublinhado*/
+}
+
+nav#menu a:hover{           /*Mudar cor da letra quando mouse passar por cima*/
+    color:#ffffff;
+    text-decoration: underline; /*Sublinhar quando passar o mouse por cima*/
+}
+
+section#corpo {
+    display: block; /*mostrar em blocos*/
+    width:630px ; /*largura*/
+    float: left;
+    border-right:1px solid #606060  ;
+    padding-right:15px;
+}
+
+article#noticia-principal h2 { /*artigos dentro da section*/
+    font-size: 13pt;
+    color: #606060;
+    background-color:#dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px ;
+}
+
+header#cabecalho-artigo h1{ /*artigo com h1*/
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+.direita{   /*formatação da classe para alinhamento*/
+    text-align: right;
+}
+
+header#cabecalho-artigo h2{ /*formatação do h2 no cabecalho do article*/
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+}
+
+header#cabecalho-artigo h3{ /*formatação do h3 no cabecalho do article*/
+    font-size: 12px;
+    color: #606060;
+
+}
+
+table#tabelaspec{
+    border: 1px solid #606060;
+    border-spacing: 0px; /*espaço entre as cedulas*/
+    margin-left: auto; /*centralizar a tabela*/
+    margin-right: auto;
+}
+
+table#tabelaspec td{
+    border: 1px solid #606060;
+    padding: 10px; /*espaço interno das cédulas*/
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce { /*tabela da coluna esquerda*/
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd { /*coluna direita da tabela*/
+    background-color: #cecece;
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span{
+    display: block; /*mostrado como bloco flutuante*/
+    float: right; /*flutuação direita*/
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px; /*abaixar um pouco para alinhamento*/
+}
+
+aside#lateral{
+    display: block;
+    width: 430px;
+    float: right; /*colcar lado a lado (blocos)*/
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size:'20pt';
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    font-size:'13pt';
+    background-color: #606060;
+    color: #ffffff;
+    padding: 5px;
+
+}
+
+
+
+footer#rodape{
+    clear: both; /*limpar conteudo e fazer copyright*/
+    border-top:1px solid #606060 ;
+}
+
+footer#rodape p{
+    text-align: center;
+}
+
