@@ -2,13 +2,17 @@
 
 <div>
 
-Site desenvolvido a fim de estudos de HTML CSS e JS
+Site desenvolvido a fim de estudos;
 
-<img src="https://github.com/AndreWar10/FrancautoVW/blob/master/2021-12-07.png"/>
+<img src="https://github.com/AndreWar10/Projeto-Glass/blob/master/2021-12-07%20(2).png"/>
 
 ## 📚 Seções
   A plataforma é composta por cinco diferentes seções:
-  - <strong>Simulação:</strong> Nela temos os campos para preenchimento e botão para gerar o cálculo das parcelas.
+  - <strong>Home:</strong> 
+  - <strong>Especificações:</strong>
+  - <strong>Fotos:</strong>
+  - <strong>Multimídia:</strong>
+  - <strong>Fale Conosco:</strong>
    
 ## 💼 Tecnologias utilizadas
   Para o desenvolvimento do site, utilizamos as seguintes tecnologias:
