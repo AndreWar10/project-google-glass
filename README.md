@@ -1,4 +1,4 @@
-# 🌈Projeto Glass 
+#  Projeto Glass 👓
 
 <div>
 
@@ -6,29 +6,30 @@ Site desenvolvido a fim de estudos;
 
 
 
-## 📚 Seções
-  A plataforma é composta por cinco diferentes seções:
-  - <strong>Home:</strong> 
+## 📚 Seções do projeto:
+  A plataforma é composta por cinco diferentes seções: Home, Especificações, Fotos, Multimídia, Fale-Conosco
+
+  1. <strong>Home:</strong> Nessa seção temos as informações gerais sobre o Google Glass, especificações técnicas.
   <img src="https://github.com/AndreWar10/Projeto-Glass/blob/master/2021-12-07%20(2).png"/>
   
   #
   
-  - <strong>Especificações:</strong>
+  2. <strong>Especificações:</strong> Toda estrutura do óculos, com interações JS para o usuário ao clicar com o mouse.
   <img src="https://github.com/AndreWar10/Projeto-Glass/blob/master/glass.src/especificacoes.jpg"/>
   
   #
   
-  - <strong>Fotos:</strong>
-  <img src="https://github.com/AndreWar10/Projeto-Glass/blob/master/glass.src/fotos.JPG"/>
+  3. <strong>Fotos:</strong> Fotos relacionadas ao google glass, com responsividade ao passar o mouse em cima do quadrado.
+  <img src="https://github.com/AndreWar10/Projeto-Glass/blob/master/glass.src/fotos.png"/>
   
   #
   
-  - <strong>Multimídia:</strong>
+  4. <strong>Multimídia:</strong> Vídeo informativo sobre o google-glass.
   <img src="https://github.com/AndreWar10/Projeto-Glass/blob/master/glass.src/multimidia.JPG"/>
   
   #
   
-  - <strong>Fale Conosco:</strong>
+  5. <strong>Fale Conosco:</strong> Formulário de cadastro do cliente e compra do óculos, com quantidade X preço final.
   <img src="https://github.com/AndreWar10/Projeto-Glass/blob/master/glass.src/faleconosco.JPG"/>
   
   #
@@ -37,7 +38,7 @@ Site desenvolvido a fim de estudos;
   Para o desenvolvimento do site, utilizamos as seguintes tecnologias:
   - HTML;
   - CSS;
-  - JAVASCRIPT
+  - JAVASCRIPT;
 
 ## 🦄 Github
 <a href="https://github.com/AndreWar10/" alt="Github">
